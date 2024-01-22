@@ -1,0 +1,815 @@
+<html lang="" style="font-size: 42.6667px;">
+<!---->
+	<head>
+		<script>
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						if(clientWidth >= 750) {
+							docEl.style.fontSize = '100px';
+						} else {
+							docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+						}
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<script>
+			! function(e) {
+				function t(a) {
+					if(i[a]) return i[a].exports;
+					var n = i[a] = {
+						exports: {},
+						id: a,
+						loaded: !1
+					};
+					return e[a].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports
+				}
+				var i = {};
+				return t.m = e, t.c = i, t.p = "", t(0)
+			}([function(e, t) {
+				"use strict";
+				Object.defineProperty(t, "__esModule", {
+					value: !0
+				});
+				var i = window;
+				t["default"] = i.flex = function(normal, e, t) {
+					var a = e || 100,
+						n = t || 1,
+						r = i.document,
+						o = navigator.userAgent,
+						d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),
+						l = o.match(/U3\/((\d+|\.){5,})/i),
+						c = l && parseInt(l[1].split(".").join(""), 10) >= 80,
+						p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi),
+						s = i.devicePixelRatio || 1;
+					p || d && d[1] > 534 || c || (s = 1);
+					var u = normal ? 1 : 1 / s,
+						m = r.querySelector('meta[name="viewport"]');
+					m || (m = r.createElement("meta"), m.setAttribute("name", "viewport"), r.head.appendChild(m)), m.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=" + u + ",maximum-scale=" + u + ",minimum-scale=" + u), r.documentElement.style.fontSize = normal ? "50px" : a / 2 * s * n + "px"
+				}, e.exports = t["default"]
+			}]);
+			flex(false, 100, 1);
+		</script>
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=0.4999999925494195,maximum-scale=0.4999999925494195,minimum-scale=0.4999999925494195">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" href="/web/favicon.ico">
+		<title>兴业智谷科技园新闻动态</title>
+		<link href="css/chunk-1962872a.7bdc79eb.css" rel="stylesheet">
+		<link href=" css/chunk-1cc3b394.bf73d4cf.css" rel="stylesheet">
+		<link href=" css/chunk-21f78052.28447f40.css" rel="stylesheet">
+		<link href=" css/chunk-2703bf5a.cf4fa701.css" rel="stylesheet">
+		<link href=" css/chunk-2bab6c8e.e0e1df2d.css" rel="stylesheet">
+		<link href=" css/chunk-3bbb9610.bc72083e.css" rel="stylesheet">
+		<link href=" css/chunk-5630e7fc.7e455780.css" rel="stylesheet">
+		<link href=" css/chunk-6322bdbb.c63eccc4.css" rel="stylesheet">
+		<link href=" css/chunk-6331d48b.a8310966.css" rel="stylesheet">
+		<link href=" css/chunk-6a7cc822.21002fb6.css" rel="stylesheet">
+		<link href=" css/chunk-6adce243.c33f2d9d.css" rel="stylesheet">
+		<link href=" css/chunk-6bcafad2.bbdaa299.css" rel="stylesheet">
+		<link href=" css/chunk-72e3ea97.884d20ab.css" rel="stylesheet">
+		<link href=" css/chunk-7bdfbbc0.7c43ec81.css" rel="stylesheet">
+		<link href=" css/chunk-834c3042.8cda5889.css" rel="stylesheet">
+		<link href=" css/chunk-85c5179e.08ca48f9.css" rel="stylesheet">
+		<link href=" css/chunk-880fe0b0.3d116fca.css" rel="stylesheet">
+		<link href=" css/chunk-a8981660.1e42aa7a.css" rel="stylesheet">
+		<link href=" css/chunk-c2fd6f4e.e5f3727a.css" rel="stylesheet">
+		<link href=" css/chunk-ccc6761c.67d69564.css" rel="stylesheet">
+		<link href=" css/chunk-d2f20c62.0854e10e.css" rel="stylesheet">
+		<link href=" css/chunk-d8a81c1a.31b34952.css" rel="stylesheet">
+		<link href=" css/chunk-db2c9cc6.3f20f9af.css" rel="stylesheet">
+		<link href=" css/chunk-dedf1be2.859f4391.css" rel="stylesheet">
+		<link href=" css/chunk-ed37775e.5a99d11c.css" rel="stylesheet">
+		<link href=" css/chunk-f41f43b4.82801654.css" rel="stylesheet">
+		<link href=" css/chunk-f54b641c.1ed66e20.css" rel="stylesheet">
+		<link href=" css/chunk-1962872a.c726cf85.js" rel="stylesheet">
+		<link href=" css/chunk-1cc3b394.f6551927.js" rel="stylesheet">
+		<link href=" css/chunk-21f78052.64491af7.js" rel="stylesheet">
+		<link href="css/chunk-2703bf5a.fbf6b724.js" rel="stylesheet">
+		<link href=" css/chunk-2bab6c8e.a1b43570.js" rel="stylesheet">
+		<link href=" css/chunk-3bbb9610.2dc3671f.js" rel="stylesheet">
+		<link href=" css/chunk-5630e7fc.6711e0c2.js" rel="stylesheet">
+		<link href=" css/chunk-6322bdbb.873b0bd5.js" rel="stylesheet">
+		<link href=" css/chunk-6331d48b.73935af5.js" rel="stylesheet">
+		<link href=" css/chunk-65f0fa10.04be5fbe.js" rel="stylesheet">
+		<link href=" css/chunk-6a7cc822.4d0209ec.js" rel="stylesheet">
+		<link href=" css/chunk-6adce243.1d4d3d6b.js" rel="stylesheet">
+		<link href=" css/chunk-6bcafad2.365d827c.js" rel="stylesheet">
+		<link href=" css/chunk-72e3ea97.036f1615.js" rel="stylesheet">
+		<link href=" css/chunk-7bdfbbc0.847a575a.js" rel="stylesheet">
+		<link href=" css/chunk-834c3042.07fc3164.js" rel="stylesheet">
+		<link href=" css/chunk-85c5179e.dbf2f511.js" rel="stylesheet">
+		<link href=" css/chunk-880fe0b0.f886b28d.js" rel="stylesheet">
+		<link href=" css/chunk-a8981660.205df242.js" rel="stylesheet">
+		<link href=" css/chunk-c2fd6f4e.270b7503.js" rel="stylesheet">
+		<link href=" css/chunk-ccc6761c.5e2cf10d.js" rel="stylesheet">
+		<link href=" css/chunk-d2f20c62.5bb5f128.js" rel="stylesheet">
+		<link href=" css/chunk-d8a81c1a.bb1329d7.js" rel="stylesheet">
+		<link href=" css/chunk-db2c9cc6.7bbec0c6.js" rel="stylesheet">
+		<link href=" css/chunk-dedf1be2.6c5f3c6a.js" rel="stylesheet">
+		<link href=" css/chunk-ed37775e.6dfdfe78.js" rel="stylesheet">
+		<link href=" css/chunk-f41f43b4.8f9450d4.js" rel="stylesheet">
+		<link href=" css/chunk-f54b641c.f15f1d28.js" rel="stylesheet">
+		<link href=" css/app.1fe8300f.css" rel="preload" as="style">
+		<link href=" css/chunk-vendors.a16c4353.css" rel="preload" as="style">
+		<link href=" css/app.e291b6dd.js" rel="preload" as="script">
+		<link href=" css/chunk-vendors.d91ee051.js" rel="preload" as="script">
+		<link href=" css/chunk-vendors.a16c4353.css" rel="stylesheet">
+		<link href=" css/app.1fe8300f.css" rel="stylesheet">
+		
+		
+		<style type="text/css">
+		    .vue-cropper[data-v-6dae58fd] {
+		        position: relative;
+		        width: 100%;
+		        height: 100%;
+		        box-sizing: border-box;
+		        user-select: none;
+		        -webkit-user-select: none;
+		        -moz-user-select: none;
+		        -ms-user-select: none;
+		        direction: ltr;
+		        touch-action: none;
+		        text-align: left;
+		        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC");
+		    }
+		
+		    .cropper-box[data-v-6dae58fd],
+		    .cropper-box-canvas[data-v-6dae58fd],
+		    .cropper-drag-box[data-v-6dae58fd],
+		    .cropper-crop-box[data-v-6dae58fd],
+		    .cropper-face[data-v-6dae58fd] {
+		        position: absolute;
+		        top: 0;
+		        right: 0;
+		        bottom: 0;
+		        left: 0;
+		        user-select: none;
+		    }
+		
+		    .cropper-box-canvas img[data-v-6dae58fd] {
+		        position: relative;
+		        text-align: left;
+		        user-select: none;
+		        transform: none;
+		        max-width: none;
+		        max-height: none;
+		    }
+		
+		    .cropper-box[data-v-6dae58fd] {
+		        overflow: hidden;
+		    }
+		
+		    .cropper-move[data-v-6dae58fd] {
+		        cursor: move;
+		    }
+		
+		    .cropper-crop[data-v-6dae58fd] {
+		        cursor: crosshair;
+		    }
+		
+		    .cropper-modal[data-v-6dae58fd] {
+		        background: rgba(0, 0, 0, 0.5);
+		    }
+		
+		    .cropper-crop-box[data-v-6dae58fd] {
+		        /*border: 2px solid #39f;*/
+		    }
+		
+		    .cropper-view-box[data-v-6dae58fd] {
+		        display: block;
+		        overflow: hidden;
+		        width: 100%;
+		        height: 100%;
+		        outline: 1px solid #39f;
+		        outline-color: rgba(51, 153, 255, 0.75);
+		        user-select: none;
+		    }
+		
+		    .cropper-view-box img[data-v-6dae58fd] {
+		        user-select: none;
+		        text-align: left;
+		        max-width: none;
+		        max-height: none;
+		    }
+		
+		    .cropper-face[data-v-6dae58fd] {
+		        top: 0;
+		        left: 0;
+		        background-color: #fff;
+		        opacity: 0.1;
+		    }
+		
+		    .crop-info[data-v-6dae58fd] {
+		        position: absolute;
+		        left: 0px;
+		        min-width: 65px;
+		        text-align: center;
+		        color: white;
+		        line-height: 20px;
+		        background-color: rgba(0, 0, 0, 0.8);
+		        font-size: 12px;
+		    }
+		
+		    .crop-line[data-v-6dae58fd] {
+		        position: absolute;
+		        display: block;
+		        width: 100%;
+		        height: 100%;
+		        opacity: 0.1;
+		    }
+		
+		    .line-w[data-v-6dae58fd] {
+		        top: -3px;
+		        left: 0;
+		        height: 5px;
+		        cursor: n-resize;
+		    }
+		
+		    .line-a[data-v-6dae58fd] {
+		        top: 0;
+		        left: -3px;
+		        width: 5px;
+		        cursor: w-resize;
+		    }
+		
+		    .line-s[data-v-6dae58fd] {
+		        bottom: -3px;
+		        left: 0;
+		        height: 5px;
+		        cursor: s-resize;
+		    }
+		
+		    .line-d[data-v-6dae58fd] {
+		        top: 0;
+		        right: -3px;
+		        width: 5px;
+		        cursor: e-resize;
+		    }
+		
+		    .crop-point[data-v-6dae58fd] {
+		        position: absolute;
+		        width: 8px;
+		        height: 8px;
+		        opacity: 0.75;
+		        background-color: #39f;
+		        border-radius: 100%;
+		    }
+		
+		    .point1[data-v-6dae58fd] {
+		        top: -4px;
+		        left: -4px;
+		        cursor: nw-resize;
+		    }
+		
+		    .point2[data-v-6dae58fd] {
+		        top: -5px;
+		        left: 50%;
+		        margin-left: -3px;
+		        cursor: n-resize;
+		    }
+		
+		    .point3[data-v-6dae58fd] {
+		        top: -4px;
+		        right: -4px;
+		        cursor: ne-resize;
+		    }
+		
+		    .point4[data-v-6dae58fd] {
+		        top: 50%;
+		        left: -4px;
+		        margin-top: -3px;
+		        cursor: w-resize;
+		    }
+		
+		    .point5[data-v-6dae58fd] {
+		        top: 50%;
+		        right: -4px;
+		        margin-top: -3px;
+		        cursor: e-resize;
+		    }
+		
+		    .point6[data-v-6dae58fd] {
+		        bottom: -5px;
+		        left: -4px;
+		        cursor: sw-resize;
+		    }
+		
+		    .point7[data-v-6dae58fd] {
+		        bottom: -5px;
+		        left: 50%;
+		        margin-left: -3px;
+		        cursor: s-resize;
+		    }
+		
+		    .point8[data-v-6dae58fd] {
+		        bottom: -5px;
+		        right: -4px;
+		        cursor: se-resize;
+		    }
+		
+		    @media screen and (max-width: 500px) {
+		        .crop-point[data-v-6dae58fd] {
+		            position: absolute;
+		            width: 20px;
+		            height: 20px;
+		            opacity: 0.45;
+		            background-color: #39f;
+		            border-radius: 100%;
+		        }
+		
+		        .point1[data-v-6dae58fd] {
+		            top: -10px;
+		            left: -10px;
+		        }
+		
+		        .point2[data-v-6dae58fd],
+		        .point4[data-v-6dae58fd],
+		        .point5[data-v-6dae58fd],
+		        .point7[data-v-6dae58fd] {
+		            display: none;
+		        }
+		
+		        .point3[data-v-6dae58fd] {
+		            top: -10px;
+		            right: -10px;
+		        }
+		
+		        .point4[data-v-6dae58fd] {
+		            top: 0;
+		            left: 0;
+		        }
+		
+		        .point6[data-v-6dae58fd] {
+		            bottom: -10px;
+		            left: -10px;
+		        }
+		
+		        .point8[data-v-6dae58fd] {
+		            bottom: -10px;
+		            right: -10px;
+		        }
+		
+		        .carousel-container {
+		            width: 100%;
+		            overflow: hidden;
+		            position: relative;
+		            height: auto; /* 设置为视窗高度的70%（可以根据需要调整） */
+		        }
+		
+		        .carousel-wrapper {
+		            display: flex;
+		            transition: transform 0.5s ease-in-out;
+		            height: auto;
+		        }
+		
+		        .carousel-item {
+		            min-width: 100%;
+		            box-sizing: border-box;
+		            overflow: hidden;
+		        }
+		
+		        .main-nav {
+		            position: absolute;
+		            top: 1.3rem;
+		            left: 3.5rem;
+		            width: 4rem;
+		            text-align: center;
+		            line-height: .8rem;
+		            background: #f4f4f4;
+		            letter-spacing: .01rem;
+		
+		            list-style-type: none;
+		            /*display: none!important;*/
+		            display: none;
+		        }
+		
+		        .active {
+		            display: block;
+		
+		        }
+		
+		        .navbar-toggle {
+		            position: absolute;
+		            top: 10px;
+		            right: 20px;
+		            cursor: pointer;
+		            color: rgba(255, 255, 255, 0.8);
+		            font-size: 24px;
+		        }
+		
+		
+		        .slide-fade-leave-active[data-v-428f2f7a] {
+		            transition: all .6s cubic-bezier(1, .5, .8, 1);
+		        }
+		
+		        .slide-fade-leave-to[data-v-428f2f7a] {
+		            transform: translatex(10.8rem);
+		            opacity: 0;
+		        }
+		
+		        .navbar .nav_li .text {
+		            color: #0c264c;
+		            font-weight: 700;
+		            display: block;
+		        }
+		
+		        .navbar .nav_li {
+		            position: absolute;
+		            top: 1.3rem;
+		            left: 3.5rem;
+		            width: 4rem;
+		            text-align: center;
+		            line-height: .8rem;
+		            background: #f4f4f4;
+		            letter-spacing: .01rem;
+		
+		            list-style-type: none;
+		            /*display: none!important;*/
+		            display: none;
+		        }
+		
+		        .navbar .main-nav .text {
+		        	color: #0c264c;
+		        	font-weight: 700;/*字体粗细*/
+		        	display: block;
+		        	 font-size: x-large;/*字体大小*/
+		        }
+		
+		    }
+		</style>
+    <link rel="stylesheet" type="text/css" href="/web/css/chunk-dedf1be2.859f4391.css">
+    <script charset="utf-8" src="/web/js/chunk-dedf1be2.6c5f3c6a.js"></script>
+    <link rel="stylesheet" type="text/css" href="/web/css/chunk-a8981660.1e42aa7a.css">
+    <script charset="utf-8" src="/web/js/chunk-a8981660.205df242.js"></script>
+    <link rel="stylesheet" type="text/css" href="/web/css/chunk-5630e7fc.7e455780.css">
+    <script charset="utf-8" src="/web/js/chunk-5630e7fc.6711e0c2.js"></script>
+</head>
+<body>
+<noscript><strong>We're sorry but 兴业智谷科技园 doesn't work properly without JavaScript enabled. Please enable it
+    to continue.</strong></noscript>
+<div id="app">
+    <div data-v-428f2f7a="" class="navbar"><img data-v-428f2f7a=""
+                                                src="image/1_logo.png" alt="">
+        <div data-v-428f2f7a="" class="nav" id="js-navbar-toggle">
+            <div data-v-428f2f7a="" class="line"></div>
+            <div data-v-428f2f7a="" class="line"></div>
+            <div data-v-428f2f7a="" class="line"></div>
+        </div>
+
+        <!--<div data-v-428f2f7a="" class="nav_li slide-fade-leave-active slide-fade-leave-to" style="display: none;">-->
+        <!--不知道为什么class为nav-li类就是不行-->
+        <div data-v-428f2f7a="" class="main-nav " id="js-menu">
+        
+        	<a data-v-428f2f7a="" href="1.html" class="link">
+        		<div data-v-428f2f7a="" class="text">
+        			网站首页
+        		</div>
+        	</a>
+        	<a data-v-428f2f7a="" href="2.html" class="link">
+        		<div data-v-428f2f7a="" class="text">
+        			服务机构
+        		</div>
+        	</a>
+        
+        	<a data-v-428f2f7a="" href="9.html" class="link">
+        		<div data-v-428f2f7a="" class="text">专家咨询</div>
+        	</a>
+        	<a data-v-428f2f7a="" href="7.html" class="link">
+        		<div data-v-428f2f7a="" class="text">科技动态</div>
+        	</a>
+        	<a data-v-428f2f7a="" href="14.html" class="link router-link-active">
+        		<div data-v-428f2f7a="" class="text">新闻动态</div>
+        	</a>
+        	<a data-v-428f2f7a="" href="6.html" class="link">
+        		<div data-v-428f2f7a="" class="text">关于我们</div>
+        	</a>
+        </div>
+        
+    </div>
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-item">
+                <img style="width: 100%; height: auto;"
+                     src="image/1_fuwu.png" alt="图片 1">
+            </div>
+            <div class="carousel-item">
+                <img style="width: 100%; height: auto;"
+                     src="image/1_fuwu.png" alt="图片 2">
+            </div>
+            <div class="carousel-item">
+                <img style="width: 100%; height: auto;"
+                     src="image/1_fuwu.png" alt="图片 3">
+            </div>
+            <!-- 添加更多轮播项 -->
+        </div>
+    </div>
+    <div data-v-e214a4ea="" data-v-137cbb9c="" class="box">
+        <div data-v-e214a4ea="" class="box_s">
+            <div data-v-e214a4ea="" class="text">服务机构</div>
+            <div data-v-e214a4ea="" class="english">SERVICE AGENCY</div>
+            <div data-v-e214a4ea="" class="line"></div>
+        </div>
+    </div>
+    <div data-v-137cbb9c="" class="institution">
+        <div data-v-37bc8b88="" data-v-137cbb9c="" class="box">
+            <div data-v-37bc8b88="" class="institution">
+                <div data-v-37bc8b88="" >
+					<img style="width: 100%; "src="image/1_1.png" alt="">
+				</div>
+                <div data-v-37bc8b88="" class="title">技术开发</div>
+                <div data-v-37bc8b88="" class="text">
+                    技术开发是新的科研成果被应用于新产品、新材料、新工艺的生产、实验过程。
+                </div>
+            </div>
+            <div data-v-37bc8b88="" class="institution">
+                <div data-v-37bc8b88="" >
+                	<img style="width: 100%; "src="image/1_2.png" alt="">
+                </div>
+                <div data-v-37bc8b88="" class="title">知识产权</div>
+                <div data-v-37bc8b88="" class="text">知识产权，是“基于，创造成果和工商标记依法产生的权利的统称”。最主要的三种知识产权，是著作权、专利权和商标权。
+                </div>
+            </div>
+            <div data-v-37bc8b88="" class="institution">
+                <div data-v-37bc8b88="" >
+                	<img style="width: 100%; "src="image/1_3.png" alt="">
+                </div>
+                <div data-v-37bc8b88="" class="title">成果转化及转让</div>
+                <div data-v-37bc8b88="" class="text">
+                    科技成果转化是指为提高生产力水平而对科学研究与技术开发所产生的具有实用价值的科技成果所进行的后续试验、开发、应用、推广直至形成新产品、新工艺、新材料，发展新产业等活动。
+                </div>
+            </div>
+            <div data-v-37bc8b88="" class="institution">
+                <div data-v-37bc8b88="" >
+                	<img style="width: 100%; "src="image/1_4.png" alt="">
+                </div>
+                <div data-v-37bc8b88="" class="title">检验检测</div>
+                <div data-v-37bc8b88="" class="text">集培训服务、咨询服务、专项服务、检测服务等相关业务功能于一体。</div>
+            </div>
+            <div data-v-37bc8b88="" class="institution">
+                <div data-v-37bc8b88="" >
+                	<img style="width: 100%; "src="image/1_5.png" alt="">
+                </div>
+                <div data-v-37bc8b88="" class="title">科技政策咨询</div>
+                <div data-v-37bc8b88="" class="text">全方位、多角度组合技术、设备、工艺、材料等创新要素，搭建信息共享和交流转化平台，助推创新、创业能力提升。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-v-e214a4ea="" data-v-137cbb9c="" class="box">
+        <div data-v-e214a4ea="" class="box_s">
+            <div data-v-e214a4ea="" class="text">关于我们</div>
+            <div data-v-e214a4ea="" class="english">ABOUT US</div>
+            <div data-v-e214a4ea="" class="line"></div>
+        </div>
+    </div>
+    <div data-v-137cbb9c="" class="about">
+        <div data-v-4d0ddf4e="" data-v-137cbb9c="" class="box">
+            <div data-v-4d0ddf4e="" class="box_left">
+                <div data-v-4d0ddf4e="" class="content">
+                    <p> <span
+                            style="color: rgb(0, 0, 0);">三河市兴业智谷科技园成立于2018年，位于三河市洵阳镇大田庄西，创业孵化面积16000平方米。孵化器的入驻企业52家，申报知识产权101项，带动就业700&nbsp;余人，合作的中介服务机构16家，合作专家21位。科技园自开展创业孵化服务工作来，以“服务、合作、共赢”为发展宗旨，以服务品质为主打品牌，以汇聚京津冀优质创业项目和高等创业人才为目标，坚持“融资、培训、交流、共享”的孵化服务理念，致力于汇聚一批科技创新企业、文化创意型企业，引进先进技术和高端人才，打造专业科技产业孵化器，力争为入孵企业提供最优质的服务，带动廊坊传统产业的转型升级和发展。</span>
+                    </p>
+                    <p> <span
+                            style="color: rgb(0, 0, 0);">三河市兴业智谷科技园的发展已形成自己的特色并开始呈现多种形态，正朝着形式多样化、功能专业化、投资主体多元化和组织网络化方向发展。科技园硬件配套设施齐全，管理体系完善，制定了较为完善的规章制度。自2018年引进企业入驻园区以来，相继出台了企业入孵服务指南、园区管理制度等相关制度。对于服务建设方面，本着服务企业的理念，为入驻企业提供工商注册、法律咨询、项目立项等一站式服务；利用现代互联网技术，增加线上交流，建立企业与服务人员微信群，及时进行沟通交流，为每个企业存在的问题进行解答；引入专业中介服务机构，与其签订服务协议，为园区企业提供更加精准、专业的指导。</span>
+                    </p>
+                </div>
+                <div data-v-4d0ddf4e="" class="more"><a data-v-0770ea1c="" data-v-4d0ddf4e=""
+                                                        href="#/web/about" class="btn more">
+                    <div data-v-0770ea1c="" class="box">
+                        <div data-v-0770ea1c="" class="text"> 了解更多</div>
+                    </div>
+                </a></div>
+            </div>
+            <div data-v-4d0ddf4e="" class="box_right"><img data-v-4d0ddf4e="" alt=""
+                                                           src="image/1_6.png">
+            </div>
+        </div>
+    </div>
+    <div data-v-e214a4ea="" data-v-137cbb9c="" class="box">
+        <div data-v-e214a4ea="" class="box_s">
+            <div data-v-e214a4ea="" class="text">科技动态</div>
+            <div data-v-e214a4ea="" class="english">TECHNOLOGY NEWS</div>
+            <div data-v-e214a4ea="" class="line"></div>
+        </div>
+    </div>
+    <div data-v-137cbb9c="" class="techenology">
+        <div data-v-ef5f37fa="" data-v-137cbb9c="" class="techenology">
+            <div data-v-ef5f37fa="" class="box">
+                <div data-v-ef5f37fa="" class="img"><img data-v-ef5f37fa=""
+                                                         src="image/1_kejikeji.png"
+                                                         alt=""></div>
+                <div data-v-ef5f37fa="" class="title">全省推进家居高质量发展工作会议召开</div>
+            </div>
+            <div data-v-ef5f37fa="" class="box">
+                <div data-v-ef5f37fa="" class="img"><img data-v-ef5f37fa=""
+                                                         src="image/1_kejikeji.png"
+                                                         alt=""></div>
+                <div data-v-ef5f37fa="" class="title">关于组织2023年河北省专精特新示范企业选拔推荐工作的通知</div>
+            </div>
+            <div data-v-ef5f37fa="" class="box">
+                <div data-v-ef5f37fa="" class="img"><img data-v-ef5f37fa=""
+                                                         src="image/1_kejikeji.png"
+                                                         alt=""></div>
+                <div data-v-ef5f37fa="" class="title">关于开展县域特色产业集群企业并购（兼并）重组试点工作的通知</div>
+            </div>
+            <div data-v-ef5f37fa="" class="box">
+                <div data-v-ef5f37fa="" class="img"><img data-v-ef5f37fa=""
+                                                         src="image/1_kejikeji.png"
+                                                         alt=""></div>
+                <div data-v-ef5f37fa="" class="title">河北：打造一批绿色生态中医药康养基地</div>
+            </div>
+        </div>
+    </div>
+    <div data-v-137cbb9c="" class="more"><a data-v-0770ea1c="" data-v-137cbb9c="" href="#/web/technology"
+                                            class="btn">
+        <div data-v-0770ea1c="" class="box">
+            <div data-v-0770ea1c="" class="text"> 更多动态</div>
+        </div>
+    </a></div>
+    <div data-v-137cbb9c="" class="expert">
+        <div data-v-edcf7cd0="" data-v-137cbb9c="" class="box">
+            <div data-v-edcf7cd0="" class="bdg">
+                <div data-v-edcf7cd0="" class="box_left"><img data-v-edcf7cd0=""
+                                                              src="image/1_8.png"
+                                                              alt=""></div>
+                <div data-v-edcf7cd0="" class="box_right">
+                    <div data-v-edcf7cd0="" class="box_s">
+                        <div data-v-edcf7cd0="" class="text">专家咨询</div>
+                        <div data-v-edcf7cd0="" class="english">EXPERT SERVICE</div>
+                        <div data-v-edcf7cd0="" class="line"></div>
+                        <a data-v-edcf7cd0="" href="#/web/expert"
+                           class="">
+                            <div data-v-edcf7cd0="" class="talk">立即咨询</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-v-e214a4ea="" data-v-137cbb9c="" class="box">
+        <div data-v-e214a4ea="" class="box_s">
+            <div data-v-e214a4ea="" class="text">新闻动态</div>
+            <div data-v-e214a4ea="" class="english">NEWS</div>
+            <div data-v-e214a4ea="" class="line"></div>
+        </div>
+    </div>
+    <div data-v-137cbb9c="" class="news">
+        <div data-v-76bb2146="" data-v-137cbb9c="" class="box">
+            <div data-v-76bb2146="" class="box_right">
+                <ul data-v-76bb2146="">
+                    <li data-v-76bb2146=""><img data-v-76bb2146=""
+                                                src="image/1_9.jpg"
+                                                alt="">
+                        <div data-v-76bb2146="" class="news">
+                            <div data-v-76bb2146="" class="title">
+                                兴业智谷科技园积极参与校企对接活动，为企业创新发展赋能
+                            </div>
+                            <div data-v-76bb2146="" class="text">
+                                <p>
+                                    为提高企业创新能力，促成校企对接合作，10月10日下午，三河经济开发区组织域内企业代表参加“河北省科技成果直通车（河北工业大学专场）电气工程学院校企对接会”活动。本次对接会汇聚了相关政府部门和石家庄、保定、张家口、唐山、廊坊、邢台等地多家企业代表。
+                                </p>
+                                <p>
+                                    会上，省部共建电工装备可靠性与智能化国家重点实验室执行主任、电气工程学院院长顾军华顾军华院长进行了发言。顾院长表示要更好的促进校企合作，推动科技成果转化与应用，加强产学研合作，在人才培养、科学研究、合作申报项目等方面进行深度融合，搭建更多平台，推动科技成果转化和院企合作的深入发展，在持续发展的前提下双方建立长期、稳定的合作关系。
+                                </p>
+                                <p>对接会上，河北宏科庆能环保设备有限公司针对高端人才需求，与学院负责人现场进行了详细对接；三河市同飞制冷股份有限公司进行了企业推介，提出了高端人才的需求；铭泰产业园和<strong>兴业智谷</strong>就产业园和高校之间的产业化合作，人才培养方面进行了深入交流。通过面对面对接与交流，促进了产学研三方的深度融合，各企业代表积极与科研团队洽谈合作事宜，开展合作意向的初步洽谈。
+                                </p>
+                                <p>会议结束后，三河经济开发区企业代表共同参观了河北工业大学电气工程学院的省部共建电工装备可靠性与智能化国家重点实验室，深入了解最新的科研设备和创新项目成果。
+                                </p>
+                                <p>
+                                    通过参加校企对接会，有力推动了企业高校科技成果转化与应用的进程，促进了科技创新与产业升级的深度融合。</p>
+                            </div>
+                            <div data-v-76bb2146="" class="bottom">
+                                <div data-v-76bb2146="" class="time">2023-10-10</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-v-76bb2146=""><img data-v-76bb2146=""
+                                                src="image/1_10.jpg"
+                                                alt="">
+                        <div data-v-76bb2146="" class="news">
+                            <div data-v-76bb2146="" class="title">
+                                三河经济开发区再添产学研合作平台|河北工业大学“携手”兴业智谷科技园打造产学研合作基地
+                            </div>
+                            <div data-v-76bb2146="" class="text">
+                                <p>艳阳高照、万物流金。6月8日，河北工业大学先进装备与工程技术研究院和三河市兴业智谷科技园有限公司产学研合作基地的揭牌仪式暨签约仪式在三河经济开发区成功举行。
+                                </p>
+                                <p>
+                                    此次产学研合作基地的建立是三河经济开发区通过前期多方走访调研，汇集企业需求、整合科技资源、积极搭建桥梁，最终促成本次签约。双方将本着优势互补、互惠互利的原则，以促进校企深度融合、服务企业和高校教学科研人才培养为目标，从产学研合作平台建设、人才定向培养、科研项目实施、专利技术攻关、学生就业培训、科研项目实践、专家客座交流等多方面展开合作。
+                                </p>
+                            </div>
+                            <div data-v-76bb2146="" class="bottom">
+                                <div data-v-76bb2146="" class="time">2023-06-08</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-v-76bb2146=""><img data-v-76bb2146=""
+                                                src="image/1_11.jpg"
+                                                alt="">
+                        <div data-v-76bb2146="" class="news">
+                            <div data-v-76bb2146="" class="title">
+                                三河市科技服务中心与兴业智谷科技园相关企业对接会顺利召开
+                            </div>
+                            <div data-v-76bb2146="" class="text">
+                                <p>
+                                    2月4日，由三河经济开发区主办，三河科技服务中心承办与兴业智谷科技园相关企业对接会在兴业智谷科技园顺利召开。</p>
+                                <p>
+                                    会前，科技服务中心人员向园区领导介绍了此次会议的主要内容及意义。同时，园区领导就目前企业面临的问题及发展方向对工作人做了大概的介绍。</p>
+                                <p>
+                                    会上，三河科技服务中心杨云主任介绍自己主要的工作内容及工作经验，询问了各企业的经营范围及专利、科研等方面的相关问题，并就企业目前所面临的问题进行了解答；科技保险服务中心石红帅经理对知识产权维护及科技保险等方面的相关服务进行了详细介绍。
+                                </p>
+                                <p>
+                                    此次对接会使企业了解到知识产权保护的重要性，为企业长远的发展提供了帮助。同时，园区会加强服务为企业有更好经营环境而不断努力！</p>
+                            </div>
+                            <div data-v-76bb2146="" class="bottom">
+                                <div data-v-76bb2146="" class="time">2023-02-27</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-v-137cbb9c="" class="more"><a data-v-0770ea1c="" data-v-137cbb9c="" href="#/web/news"
+                                                class="btn">
+            <div data-v-0770ea1c="" class="box">
+                <div data-v-0770ea1c="" class="text"> 更多动态</div>
+            </div>
+        </a></div>
+    </div>
+</div>
+<div data-v-279675db="" class="box">
+    <div data-v-279675db="" class="bottom">
+        <div data-v-279675db="" class="box_left">
+            <div data-v-279675db="" class="contact">联系我们</div>
+            <div data-v-279675db="" class="contact_s">CONTACT US</div>
+            <div data-v-279675db="" class="line"></div>
+        </div>
+        <div data-v-279675db="" class="box_right"><img data-v-279675db="" alt=""
+                                                       src="image/1_12.jpg">
+            <ul data-v-279675db="">
+                <li data-v-279675db="">业务咨询邮箱：971836487@qq.com</li>
+                <li data-v-279675db="">售后服务邮箱：971836487@qq.com</li>
+                <li data-v-279675db="">业务受理邮箱：971836487@qq.com</li>
+                <li data-v-279675db="">招聘邮箱：971836487@qq.com</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<script src="/web/js/chunk-vendors.d91ee051.js"></script>
+<script src="/web/js/app.e291b6dd.js"></script>
+<script>
+    // 初始化当前索引
+    let currentIndex = 0;
+    // 获取所有轮播项
+    const items = document.querySelectorAll('.carousel-item');
+
+    // 获取轮播项总数
+    const totalItems = items.length;
+    // 定义自动轮播计时器
+    let intervalId;
+
+    // 显示下一项
+    function showNext() {
+        if (currentIndex < totalItems - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        updateCarousel();
+    }
+
+    // 更新轮播图位置
+    function updateCarousel() {
+        const newTransformValue = -currentIndex * 100 + '%';
+        document.querySelector('.carousel-wrapper').style.transform = 'translateX(' + newTransformValue + ')';
+    }
+
+    // 自动轮播
+    function startAutoCarousel() {
+        intervalId = setInterval(showNext, 3000); // 切换间隔为3秒
+    }
+
+    // 页面加载完成后启动自动轮播
+    document.addEventListener('DOMContentLoaded', startAutoCarousel);
+</script>
+
+<script type="text/javascript">
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    navBarToggle.addEventListener("click", function (event) {
+        mainNav.classList.toggle("active")/*从字符串删除，如果不存在则添加*/
+
+    })
+</script>
+
+</body>
+</html>L

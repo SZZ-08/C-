@@ -1,0 +1,500 @@
+<html lang="" style="font-size: 42.6667px;">
+
+	<head>
+		<script>
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						if(clientWidth >= 750) {
+							docEl.style.fontSize = '100px';
+						} else {
+							docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+						}
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<script>
+			! function(e) {
+				function t(a) {
+					if(i[a]) return i[a].exports;
+					var n = i[a] = {
+						exports: {},
+						id: a,
+						loaded: !1
+					};
+					return e[a].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports
+				}
+				var i = {};
+				return t.m = e, t.c = i, t.p = "", t(0)
+			}([function(e, t) {
+				"use strict";
+				Object.defineProperty(t, "__esModule", {
+					value: !0
+				});
+				var i = window;
+				t["default"] = i.flex = function(normal, e, t) {
+					var a = e || 100,
+						n = t || 1,
+						r = i.document,
+						o = navigator.userAgent,
+						d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),
+						l = o.match(/U3\/((\d+|\.){5,})/i),
+						c = l && parseInt(l[1].split(".").join(""), 10) >= 80,
+						p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi),
+						s = i.devicePixelRatio || 1;
+					p || d && d[1] > 534 || c || (s = 1);
+					var u = normal ? 1 : 1 / s,
+						m = r.querySelector('meta[name="viewport"]');
+					m || (m = r.createElement("meta"), m.setAttribute("name", "viewport"), r.head.appendChild(m)), m.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=" + u + ",maximum-scale=" + u + ",minimum-scale=" + u), r.documentElement.style.fontSize = normal ? "50px" : a / 2 * s * n + "px"
+				}, e.exports = t["default"]
+			}]);
+			flex(false, 100, 1);
+		</script>
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=0.4999999925494195,maximum-scale=0.4999999925494195,minimum-scale=0.4999999925494195">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" href="/web/favicon.ico">
+		<title>兴业智谷科技园新闻动态</title>
+		<link href="css/chunk-1962872a.7bdc79eb.css" rel="stylesheet">
+		<link href=" css/chunk-1cc3b394.bf73d4cf.css" rel="stylesheet">
+		<link href=" css/chunk-21f78052.28447f40.css" rel="stylesheet">
+		<link href=" css/chunk-2703bf5a.cf4fa701.css" rel="stylesheet">
+		<link href=" css/chunk-2bab6c8e.e0e1df2d.css" rel="stylesheet">
+		<link href=" css/chunk-3bbb9610.bc72083e.css" rel="stylesheet">
+		<link href=" css/chunk-5630e7fc.7e455780.css" rel="stylesheet">
+		<link href=" css/chunk-6322bdbb.c63eccc4.css" rel="stylesheet">
+		<link href=" css/chunk-6331d48b.a8310966.css" rel="stylesheet">
+		<link href=" css/chunk-6a7cc822.21002fb6.css" rel="stylesheet">
+		<link href=" css/chunk-6adce243.c33f2d9d.css" rel="stylesheet">
+		<link href=" css/chunk-6bcafad2.bbdaa299.css" rel="stylesheet">
+		<link href=" css/chunk-72e3ea97.884d20ab.css" rel="stylesheet">
+		<link href=" css/chunk-7bdfbbc0.7c43ec81.css" rel="stylesheet">
+		<link href=" css/chunk-834c3042.8cda5889.css" rel="stylesheet">
+		<link href=" css/chunk-85c5179e.08ca48f9.css" rel="stylesheet">
+		<link href=" css/chunk-880fe0b0.3d116fca.css" rel="stylesheet">
+		<link href=" css/chunk-a8981660.1e42aa7a.css" rel="stylesheet">
+		<link href=" css/chunk-c2fd6f4e.e5f3727a.css" rel="stylesheet">
+		<link href=" css/chunk-ccc6761c.67d69564.css" rel="stylesheet">
+		<link href=" css/chunk-d2f20c62.0854e10e.css" rel="stylesheet">
+		<link href=" css/chunk-d8a81c1a.31b34952.css" rel="stylesheet">
+		<link href=" css/chunk-db2c9cc6.3f20f9af.css" rel="stylesheet">
+		<link href=" css/chunk-dedf1be2.859f4391.css" rel="stylesheet">
+		<link href=" css/chunk-ed37775e.5a99d11c.css" rel="stylesheet">
+		<link href=" css/chunk-f41f43b4.82801654.css" rel="stylesheet">
+		<link href=" css/chunk-f54b641c.1ed66e20.css" rel="stylesheet">
+		<link href=" css/chunk-1962872a.c726cf85.js" rel="stylesheet">
+		<link href=" css/chunk-1cc3b394.f6551927.js" rel="stylesheet">
+		<link href=" css/chunk-21f78052.64491af7.js" rel="stylesheet">
+		<link href="css/chunk-2703bf5a.fbf6b724.js" rel="stylesheet">
+		<link href=" css/chunk-2bab6c8e.a1b43570.js" rel="stylesheet">
+		<link href=" css/chunk-3bbb9610.2dc3671f.js" rel="stylesheet">
+		<link href=" css/chunk-5630e7fc.6711e0c2.js" rel="stylesheet">
+		<link href=" css/chunk-6322bdbb.873b0bd5.js" rel="stylesheet">
+		<link href=" css/chunk-6331d48b.73935af5.js" rel="stylesheet">
+		<link href=" css/chunk-65f0fa10.04be5fbe.js" rel="stylesheet">
+		<link href=" css/chunk-6a7cc822.4d0209ec.js" rel="stylesheet">
+		<link href=" css/chunk-6adce243.1d4d3d6b.js" rel="stylesheet">
+		<link href=" css/chunk-6bcafad2.365d827c.js" rel="stylesheet">
+		<link href=" css/chunk-72e3ea97.036f1615.js" rel="stylesheet">
+		<link href=" css/chunk-7bdfbbc0.847a575a.js" rel="stylesheet">
+		<link href=" css/chunk-834c3042.07fc3164.js" rel="stylesheet">
+		<link href=" css/chunk-85c5179e.dbf2f511.js" rel="stylesheet">
+		<link href=" css/chunk-880fe0b0.f886b28d.js" rel="stylesheet">
+		<link href=" css/chunk-a8981660.205df242.js" rel="stylesheet">
+		<link href=" css/chunk-c2fd6f4e.270b7503.js" rel="stylesheet">
+		<link href=" css/chunk-ccc6761c.5e2cf10d.js" rel="stylesheet">
+		<link href=" css/chunk-d2f20c62.5bb5f128.js" rel="stylesheet">
+		<link href=" css/chunk-d8a81c1a.bb1329d7.js" rel="stylesheet">
+		<link href=" css/chunk-db2c9cc6.7bbec0c6.js" rel="stylesheet">
+		<link href=" css/chunk-dedf1be2.6c5f3c6a.js" rel="stylesheet">
+		<link href=" css/chunk-ed37775e.6dfdfe78.js" rel="stylesheet">
+		<link href=" css/chunk-f41f43b4.8f9450d4.js" rel="stylesheet">
+		<link href=" css/chunk-f54b641c.f15f1d28.js" rel="stylesheet">
+		<link href=" css/app.1fe8300f.css" rel="preload" as="style">
+		<link href=" css/chunk-vendors.a16c4353.css" rel="preload" as="style">
+		<link href=" css/app.e291b6dd.js" rel="preload" as="script">
+		<link href=" css/chunk-vendors.d91ee051.js" rel="preload" as="script">
+		<link href=" css/chunk-vendors.a16c4353.css" rel="stylesheet">
+		<link href=" css/app.1fe8300f.css" rel="stylesheet">
+		
+		
+		<!--响应式导航栏
+			<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    
+		-->
+		
+		
+		<style type="text/css">
+			.vue-cropper[data-v-6dae58fd] {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				box-sizing: border-box;
+				user-select: none;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				direction: ltr;
+				touch-action: none;
+				text-align: left;
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC");
+			}
+			
+			.cropper-box[data-v-6dae58fd],
+			.cropper-box-canvas[data-v-6dae58fd],
+			.cropper-drag-box[data-v-6dae58fd],
+			.cropper-crop-box[data-v-6dae58fd],
+			.cropper-face[data-v-6dae58fd] {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				user-select: none;
+			}
+			
+			.cropper-box-canvas img[data-v-6dae58fd] {
+				position: relative;
+				text-align: left;
+				user-select: none;
+				transform: none;
+				max-width: none;
+				max-height: none;
+			}
+			
+			.cropper-box[data-v-6dae58fd] {
+				overflow: hidden;
+			}
+			
+			.cropper-move[data-v-6dae58fd] {
+				cursor: move;
+			}
+			
+			.cropper-crop[data-v-6dae58fd] {
+				cursor: crosshair;
+			}
+			
+			.cropper-modal[data-v-6dae58fd] {
+				background: rgba(0, 0, 0, 0.5);
+			}
+			
+			.cropper-crop-box[data-v-6dae58fd] {
+				/*border: 2px solid #39f;*/
+			}
+			
+			.cropper-view-box[data-v-6dae58fd] {
+				display: block;
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+				outline: 1px solid #39f;
+				outline-color: rgba(51, 153, 255, 0.75);
+				user-select: none;
+			}
+			
+			.cropper-view-box img[data-v-6dae58fd] {
+				user-select: none;
+				text-align: left;
+				max-width: none;
+				max-height: none;
+			}
+			
+			.cropper-face[data-v-6dae58fd] {
+				top: 0;
+				left: 0;
+				background-color: #fff;
+				opacity: 0.1;
+			}
+			
+			.crop-info[data-v-6dae58fd] {
+				position: absolute;
+				left: 0px;
+				min-width: 65px;
+				text-align: center;
+				color: white;
+				line-height: 20px;
+				background-color: rgba(0, 0, 0, 0.8);
+				font-size: 12px;
+			}
+			
+			.crop-line[data-v-6dae58fd] {
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				opacity: 0.1;
+			}
+			
+			.line-w[data-v-6dae58fd] {
+				top: -3px;
+				left: 0;
+				height: 5px;
+				cursor: n-resize;
+			}
+			
+			.line-a[data-v-6dae58fd] {
+				top: 0;
+				left: -3px;
+				width: 5px;
+				cursor: w-resize;
+			}
+			
+			.line-s[data-v-6dae58fd] {
+				bottom: -3px;
+				left: 0;
+				height: 5px;
+				cursor: s-resize;
+			}
+			
+			.line-d[data-v-6dae58fd] {
+				top: 0;
+				right: -3px;
+				width: 5px;
+				cursor: e-resize;
+			}
+			
+			.crop-point[data-v-6dae58fd] {
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				opacity: 0.75;
+				background-color: #39f;
+				border-radius: 100%;
+			}
+			
+			.point1[data-v-6dae58fd] {
+				top: -4px;
+				left: -4px;
+				cursor: nw-resize;
+			}
+			
+			.point2[data-v-6dae58fd] {
+				top: -5px;
+				left: 50%;
+				margin-left: -3px;
+				cursor: n-resize;
+			}
+			
+			.point3[data-v-6dae58fd] {
+				top: -4px;
+				right: -4px;
+				cursor: ne-resize;
+			}
+			
+			.point4[data-v-6dae58fd] {
+				top: 50%;
+				left: -4px;
+				margin-top: -3px;
+				cursor: w-resize;
+			}
+			
+			.point5[data-v-6dae58fd] {
+				top: 50%;
+				right: -4px;
+				margin-top: -3px;
+				cursor: e-resize;
+			}
+			
+			.point6[data-v-6dae58fd] {
+				bottom: -5px;
+				left: -4px;
+				cursor: sw-resize;
+			}
+			
+			.point7[data-v-6dae58fd] {
+				bottom: -5px;
+				left: 50%;
+				margin-left: -3px;
+				cursor: s-resize;
+			}
+			
+			.point8[data-v-6dae58fd] {
+				bottom: -5px;
+				right: -4px;
+				cursor: se-resize;
+			}
+			
+			/*导航栏组件*/
+				.main-nav {
+				position: absolute;
+				top: 1.3rem;
+				left: 3.5rem;
+				width: 4rem;
+				text-align: center;
+				line-height: .8rem;
+				background: #f4f4f4;
+				letter-spacing: .01rem;
+				
+			    list-style-type: none;
+			    /*display: none!important;*/
+			   display: none;
+			}
+			.active {
+		 display: block;
+		
+		}
+			
+			.navbar-toggle {
+            position:absolute;
+            top:10px;
+            right:20px;
+            cursor:pointer;
+            color:rgba(255,255,255,0.8);
+            font-size:24px;
+        }
+			
+			
+	
+    .slide-fade-leave-active[data-v-428f2f7a] {
+      transition: all .6s cubic-bezier(1, .5, .8, 1);
+    }
+
+ .slide-fade-leave-to[data-v-428f2f7a]{
+      transform: translatex(10.8rem);
+      opacity: 0;
+    }
+			.navbar .nav_li .text {
+	color: #0c264c;
+	font-weight: 700;
+	display: block;
+}
+		
+		.navbar .nav_li { 
+	position: absolute;
+	top: 1.3rem;
+	left: 3.5rem;
+	width: 4rem;
+	text-align: center;
+	line-height: .8rem;
+	background: #f4f4f4;
+	letter-spacing: .01rem;
+	
+	list-style-type: none;
+    /*display: none!important;*/
+   display: none;
+}
+		
+		.navbar .main-nav .text {
+			color: #0c264c;
+			font-weight: 700;/*字体粗细*/
+			display: block;
+			 font-size: x-large;/*字体大小*/
+		}
+		
+		</style>
+	</head>
+<body><noscript><strong>We're sorry but 兴业智谷科技园 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+		<div id="app">
+			<div data-v-428f2f7a="" class="navbar"><img data-v-428f2f7a="" src="image/1_logo.png" alt="">
+				
+				<!--替代导航汉堡图标组件-->
+				<div data-v-428f2f7a="" class="nav" id = "js-navbar-toggle">
+					<div data-v-428f2f7a="" class="line"></div>
+					<div data-v-428f2f7a="" class="line"></div>
+					<div data-v-428f2f7a="" class="line"></div>
+				</div>
+				
+				<!--<div data-v-428f2f7a="" class="nav_li slide-fade-leave-active slide-fade-leave-to" style="display: none;">-->
+				<!--不知道为什么class为nav-li类就是不行-->
+				<div data-v-428f2f7a="" class="main-nav " id="js-menu">
+				
+									<a data-v-428f2f7a="" href="1.html" class="link">
+										<div data-v-428f2f7a="" class="text">
+											网站首页
+										</div>
+									</a>
+									<a data-v-428f2f7a="" href="2.html" class="link">
+										<div data-v-428f2f7a="" class="text">
+											服务机构
+										</div>
+									</a>
+				
+									<a data-v-428f2f7a="" href="9.html" class="link">
+										<div data-v-428f2f7a="" class="text">专家咨询</div>
+									</a>
+									<a data-v-428f2f7a="" href="7.html" class="link">
+										<div data-v-428f2f7a="" class="text">科技动态</div>
+									</a>
+									<a data-v-428f2f7a="" href="14.html" class="link router-link-active">
+										<div data-v-428f2f7a="" class="text">新闻动态</div>
+									</a>
+									<a data-v-428f2f7a="" href="6.html" class="link">
+										<div data-v-428f2f7a="" class="text">关于我们</div>
+									</a>
+								</div>
+				<!--</div>-->
+			</div>
+    <div data-v-92a8ea82="" class="index"><img data-v-92a8ea82="" src="./img/fuwujigoubeijing.png" alt=""
+                                               class="banner">
+        <div data-v-92a8ea82="" class="content">
+            <div data-v-92a8ea82="" class="box">
+                <div data-v-92a8ea82="" class="title">机构介绍</div>
+                <div data-v-92a8ea82="" class="line"></div>
+                <img data-v-92a8ea82="" alt="" src="image/2_2.png">
+                <div data-v-92a8ea82="" class="box_s">
+                    <div data-v-92a8ea82="" class="name">北京睿博行远知识产权代理有限公司廊坊分公司</div>
+                    <div data-v-92a8ea82="" class="line"></div>
+                    <div data-v-92a8ea82="" class="text"><p data-v-92a8ea82="">负责人姓名：郑雯</p>
+                        <p data-v-92a8ea82="">负责人电话：***********</p>
+                        <p data-v-92a8ea82="">类别：知识产权</p>
+                        <p data-v-92a8ea82="">所在地：北京市/市辖区/东城区</p></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-92a8ea82="" class="service">
+            <div data-v-92a8ea82="" class="title">【服务内容】</div>
+            <div data-v-92a8ea82="" class="text"><p>1、专利代理：提供专利申请、专利布局、专利挖掘等方面的服务。</p>
+                <p>2、商标代理：提供商标注册、商标维权、商标转让等方面的服务。</p>
+                <p>3、版权代理：提供版权登记、版权维权、版权交易等方面的服务。</p>
+                <p>4、知识产权评估：提供知识产权价值评估服务，帮助企业了解知识产权的市场价值和潜在收益。</p>
+                <p>
+                    5、知识产权咨询：提供知识产权方面的咨询服务，包括知识产权战略规划、知识产权风险评估、知识产权运营管理等方面的咨询。</p>
+                <p>
+                    6、知识产权培训：提供知识产权培训服务，包括知识产权基础知识培训、知识产权申请流程培训、知识产权维权技巧培训等方面的培训。</p>
+                <p>7、知识产权许可和转让：提供知识产权许可和转让服务，帮助客户将其知识产权商业化应用并获得收益。</p>
+                <p>8、知识产权检索和分析：进行知识产权检索和分析，帮助客户了解其所在领域的技术发展和竞争情况。</p></div>
+            <div data-v-92a8ea82="" class="title">【成功案例】</div>
+            <div data-v-92a8ea82="" class="text"><p>
+                北京方安思达知识产权代理有限公司廊坊分公司通过对企业的技术进行详细的分析和评估，确定需要规避的专利风险和可行的技术路线，提供全方位的专利代理服务，包括专利申请、专利布局、专利挖掘等方面的服务。</p>
+            </div>
+        </div>
+    </div>
+    <div data-v-279675db="" class="box">
+        <div data-v-279675db="" class="bottom">
+            <div data-v-279675db="" class="box_left">
+                <div data-v-279675db="" class="contact">联系我们</div>
+                <div data-v-279675db="" class="contact_s">CONTACT US</div>
+                <div data-v-279675db="" class="line"></div>
+            </div>
+            <div data-v-279675db="" class="box_right"><img data-v-279675db="" alt=""
+                                                           src="image/2_8.jpg">
+                <ul data-v-279675db="">
+                    <li data-v-279675db="">业务咨询邮箱：971836487@qq.com</li>
+                    <li data-v-279675db="">售后服务邮箱：971836487@qq.com</li>
+                    <li data-v-279675db="">业务受理邮箱：971836487@qq.com</li>
+                    <li data-v-279675db="">招聘邮箱：971836487@qq.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	        let mainNav = document.getElementById('js-menu');
+	        let navBarToggle = document.getElementById('js-navbar-toggle');
+	        navBarToggle.addEventListener("click",function(event) {
+	            mainNav.classList.toggle("active")/*从字符串删除，如果不存在则添加*/
+	        	
+    })
+	    </script>
+</body>
+</html>
